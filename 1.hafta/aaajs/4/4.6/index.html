@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+  // let obj = {};
+  // function  A() {return obj; }
+  // function  b() {return obj; }
+  //
+  // alert(A() === b());
+
+  function HesapMakinesi(){
+    this.oku = function (){
+      this.a = +prompt('a',0);
+      this.b = +prompt('b',0);
+    };
+    this.topla = function (){
+      return this.a + this.b;
+    }
+    this.carp = function (){
+      return this.a * this.b;
+    }
+  }
+
+  let hesapMakinesi = new HesapMakinesi();
+  hesapMakinesi.oku();
+  alert('toplam = ' + hesapMakinesi.topla());
+  alert('carpim = ' + hesapMakinesi.carp());
+
+</script>
+</body>
+</html>

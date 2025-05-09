@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  // function topla(n){
+  //   let toplam = 0;
+  //   for (let i = 1; i <= n; i++) {
+  //     toplam += i;
+  //   }
+  //   return toplam;
+  // }
+
+  // function topla(n){       ÖZÇAĞRI
+  //   if (n === 1) return 1;
+  //   return n + topla(n-1);
+  // }
+
+  // function topla(n){ // aritmetik
+  //   return n * (n +1) / 2;
+  // }
+
+  // alert(topla(100));
+
+  // function factorial(n){
+  //   if(n != 1){
+  //     return n * factorial(n - 1);
+  //   }else{
+  //     return 1;
+  //   }
+  // }
+  // alert(factorial(5));
+  //
+  // function fib(n){
+  //   if(n <= 1){
+  //     return n;
+  //   }else{
+  //     return fib(n-1) + fib(n-2);
+  //   }
+  // }
+  // alert(fib(7));
+
+  let list = {
+    deger: 1,
+    sonraki: {
+      deger: 2,
+      sonraki: {
+        deger: 3,
+        sonraki: {
+          deger: 4,
+          sonraki: null
+        }
+      }
+    }
+  };
+
+  function geriListeYazdir(list){
+    if (list.sonraki){
+      geriListeYazdir(list.sonraki);
+    }
+    alert(list.deger);
+  }
+  geriListeYazdir(list); // ÖNCE EN SONA GİDİYOR 1-2-3-4 SONRA 4-3-2-1 DİYE TEKRAR YAZIYOR
+
+  // function listeYaz(list){
+  //
+  //   while (list){
+  //     alert(list.deger);
+  //     list = list.sonraki;
+  //   }
+  // }
+  // listeYaz(list);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  // function sayacUret(){
+  //   let say = 0;
+  //
+  //   return function (){
+  //     return say++;
+  //   };
+  // }
+  //
+  // // let sayac = sayacUret();
+  // // let sayac2 = sayacUret();
+  // //
+  // // alert(sayac());
+  // // alert(sayac());
+  // // // birbirinden bağımsız
+  // // alert(sayac2());
+  // // alert(sayac2());
+
+  // function Sayac(){
+  //   let say = 0;
+  //
+  //   this.yukselt = function (){
+  //     return ++say;
+  //   };
+  //   this.azalt = function (){
+  //     return --say;
+  //   }
+  // }
+  // let sayac = new Sayac();
+  //
+  // alert(sayac.yukselt());
+  // alert(sayac.yukselt());
+  // alert(sayac.azalt());
+
+  // let sozcuk = "Merhaba";
+  //
+  // if (true) {
+  //   let kullanici = "Ahmet";
+  //
+  //   function selamVer() {
+  //     alert(`${sozcuk}, ${kullanici}`);
+  //   }
+  // }
+  // selamVer();
+  // İF'İN İÇİNDE OLDUĞU İÇİN DIŞARDA KULLANAMAM
+
+  // function topla(a){
+  //   return function (b){
+  //     return a + b;
+  //   };
+  // }
+  // alert(topla(5)(6));
+
+  // function arasinda(a, b){
+  //   return function (x){
+  //     return x >= a && x <= b;
+  //   };
+  // }
+  //
+  // function diziIcınde(arr){
+  //   return function (x){
+  //     return arr.indexOf(x) !== -1;
+  //   };
+  // }
+  //
+  // let arr = [1, 2, 3, 4, 5, 6, 7];
+  //
+  //
+  // alert( arr.filter(diziIcınde([1, 2, 10])) );
+  // alert(arr.filter(arasinda(3, 6)));
+
+  let kullanicilar = [
+    { ad: "Ahmet", yas: 20, soyad: "Zurnacı" },
+    { ad: "Hideo", yas: 18, surname: "Konami" },
+    { ad: "Jane", yas: 19, surname: "Hathaway" }
+  ];
+
+  function alanIle(alan){
+    return (a, b) => a[alan] > b[alan] ? 1: -11;
+  }
+
+  kullanicilar.sort(alanIle('ad'));
+  kullanicilar.forEach(kullanici => alert(kullanici.ad));
+
+  kullanicilar.sort(alanIle('yas'));
+  kullanicilar.forEach(kullanici => alert(kullanici.ad));
+
+</script>
+</body>
+</html>

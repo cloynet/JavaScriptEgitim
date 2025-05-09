@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+  // "prototype" özelliği sadece bir yapıcı fonksiyona ayarlandığı ve new ile çağırıldığında özel etkisi olur.
+
+  function Rabbit() {}
+    Rabbit.prototype = {
+      eats: true
+    };
+
+    let rabbit = new Rabbit();
+
+    alert(rabbit.eats);
+
+
+
+</script>
+</body>
+</html>

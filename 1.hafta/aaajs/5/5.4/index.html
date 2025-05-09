@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  // let meyveler = ['Elma','Armut','Portakal'];
+  // let sepet = meyveler;
+  // sepet.push('Muz');
+  // // alert(meyveler.length);
+  // alert(sepet.length);
+
+  // let styles = ['Jazz','Blues'];
+  // styles.push('Rock-n-Roll');
+  // styles[Math.floor((styles.length -1) /2)] = 'Classics';
+  // alert(styles.shift());
+  // styles.unshift('Rap','Reggae');
+  // console.log(styles);
+
+  // let arr = ["a", "b"];
+  //
+  // arr.push(function() {
+  //   alert( this );
+  // })
+  //
+  // arr[2](); // ?
+
+  function sumInput(){
+    let sayilar = [];
+
+    while (true) {
+      let deger = +prompt("Deger giriniz");
+
+      if(deger === '' || deger === null || !isFinite(deger))break;
+
+      sayilar.push(deger);
+    }
+    let toplam = 0;
+    for (let sayi of sayilar){
+      toplam += sayi;
+    }
+    return toplam;
+  }
+  alert( sumInput());
+
+</script>
+</body>
+</html>

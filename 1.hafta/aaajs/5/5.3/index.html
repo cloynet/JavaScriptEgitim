@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  // function ucFirst(str){
+  //   if(!str) return str;
+  //
+  //   return str[0].toUpperCase() + str.slice(1);
+  // }
+  // alert(ucFirst("eren"));
+
+  // function checkSpam(str){
+  //   let lowerStr = str.toLowerCase();
+  //
+  //   return lowerStr.includes("viagra") || lowerStr.includes("xxx");
+  // }
+  // alert(checkSpam("buy ViAGra now"));
+  // alert(checkSpam("free xxxxx"));
+  // alert(checkSpam("rabbitus"));
+
+
+  function extractCurrencyValue(str){
+    return +str.slice(1);
+  }
+  alert(extractCurrencyValue("$100"));
+
+</script>
+</body>
+</html>

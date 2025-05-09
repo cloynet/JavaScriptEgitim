@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function wrap(target){
+        return new Proxy(target, {
+            get(target, prop){
+                if (!(prop in target)){
+                    throw new Error(`${prop} yok`);
+                }
+                return target[prop];
+            }
+        });
+    }
+
+    let user = {
+        name: 'Eren',
+    };
+
+    user = wrap(user);
+
+    alert(user.name);
+    alert(user.age);
+
+</script>
+</body>
+</html>
