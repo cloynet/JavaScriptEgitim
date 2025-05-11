@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // let ragexp = /\.{3,}/g;
+    // alert ('Merhaba!... Nasıl gidiyor?.....'.match(ragexp));
+
+    let regexp = /#[a-f0-9]{6}\b/gi;
+    let str = "color:#121212; background-color:#AA00ef bad-colors:f#fddee #fd2 #12345678";
+    alert( str.match(regexp) )
+
+</script>
+</body>
+</html>
