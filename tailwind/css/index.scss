@@ -1,0 +1,41 @@
+body{
+  background: #CED4DA;
+}
+
+#menu-button img {
+  filter: brightness(0) invert(1);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav {
+  background: #212529;
+  button {
+    cursor: pointer;
+  }
+  ul {
+    li{
+      a{
+        color: lightgray;
+        &:hover{
+          color: #999;
+        }
+      }
+    }
+  }
+}
+
+.clock-container {
+  #clock {
+    width: 200px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    border-top-right-radius: 50px;
+    opacity: 0.3;
+  }
+}
