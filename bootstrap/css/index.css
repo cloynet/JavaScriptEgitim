@@ -65,6 +65,12 @@ img {
 }
 
 @media (min-width: 768px) {
+  .works {
+    max-width: 600px;
+  }
+  .works h1 {
+    min-width: 700px;
+  }
   .fs-md-1 {
     font-size: 3rem;
   }
