@@ -76,6 +76,14 @@ $fs-md: (
 
 
 @media (min-width: 768px) {
+  .works {
+    max-width: 600px;
+    h1{
+      min-width: 700px;
+    }
+  }
+
+
   @each $key, $value in $fs-md {
     .fs-md-#{$key} {
       font-size: $value;
