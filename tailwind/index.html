@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body class="min-h-screen flex flex-col">
+
+<nav class="" id="nav-bar">
+    <div class="px-5 md:px-0 py-5 md:py-10 flex-col items-center flex-column md:justify-center">
+        <button class="md:hidden border-4  border-gray-500 rounded " id="menu-button">
+            <img src="img/hamburger.svg" class="w-10" alt="">
+        </button>
+        <ul id="menu" class="max-h-0 overflow-hidden md:max-h-full md:overflow-visible md:flex flex-col md:flex-row md:space-x-8 justify-center space-y-4 md:space-y-0 font-bold transition-all duration-300">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="about.html" >About</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="main-header flex flex-1 justify-center items-center ml-5 md:ml-0">
+    <main class="container flex flex-col w-full max-w-4xl mx-auto">
+        <div class="d-block flex-col main-content  md:mt-0">
+            <h1 class="flex flex-col gap-0 md-mb-0 mb-3 text-3xl sm:text-4xl md:text-5xl leading-none">
+                <span>Merhaba</span>
+                <span>Ben,</span>
+                <span>Eren</span>
+            </h1>
+            <p class="text-base">Kendimi her gün bir adım ileriye atmaya çalışan acemi bir yazılımcıyım</p>
+            <div class="works mt-4">
+                <h1 class="md:text-4xl text-xl mb-5">Şimdiye kadar olan çalışmalarım;</h1>
+
+                <div class="w-full max-w-3xl px-4 sm:px-6 lg:px-8 md:-ml-8 -ml-4">
+
+                    <div class="accordion-item w-full border rounded">
+                        <button class="accordion-header w-full flex justify-between items-center p-4 bg-gray-100 font-semibold">
+                            Project-Zero
+                            <img class="chevron w-4 h-4 transition-transform duration-300" src="img/chevron-up.svg" alt="">
+                        </button>
+                        <div class="accordion-body bg-white max-h-0 p-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            İlk defa tailwind kullanarak yaptığım projem, önce videosunu izleyip ardından kendim yaptım
+                        </div>
+                    </div>
+
+                    <div class="accordion-item w-full border rounded">
+                        <button class="accordion-header w-full flex justify-between items-center p-4 bg-gray-100 font-semibold">
+                            Kaya Harita
+                            <img class="chevron w-4 h-4 transition-transform duration-300" src="img/chevron-up.svg" alt="">
+                        </button>
+                        <div class="accordion-body bg-white max-h-0 p-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            HTML ve CSS öğrenirken yaptığım proje, bu projede flex ve bir kaç özellik öğrendim
+                        </div>
+                    </div>
+
+                    <div class="accordion-item w-full border rounded">
+                        <button class="accordion-header w-full flex justify-between items-center p-4 bg-gray-100 font-semibold">
+                            Dungeon
+                            <img class="chevron w-4 h-4 transition-transform duration-300" src="img/chevron-up.svg" alt="">
+                        </button>
+                        <div class="accordion-body bg-white max-h-0 p-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            Java öğrenmeye çalıştığım zaman yaptığım basit bir zindan oyunu çok kısa ve basit bir çalışma,
+                            burada Abstract ve Interfaces kullanmaya çalıştım fakat çoğunlukla interface kullandım
+                        </div>
+                    </div>
+
+                    <div class="accordion-item w-full border rounded">
+                        <button class="accordion-header w-full flex justify-between items-center p-4 bg-gray-100 font-semibold">
+                            JavaScriptEgitim
+                            <img class="chevron w-4 h-4 transition-transform duration-300" src="img/chevron-up.svg" alt="">
+                        </button>
+                        <div class="accordion-body bg-white max-h-0 p-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            Bu proje olmamakla birlikte benim JavaScript öğrenme sürecim, Senseim U. Bey'in yönlendirmesiyle birlikte daha güzel yerlere geleceğim
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+</div>
+
+
+
+<div class="bottom-0 left-0 static clock-container text-center w-40">
+    <div id="clock" class="bg-black text-white p-1 text-lg font-bold"></div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>

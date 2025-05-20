@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <title>Document</title>
+</head>
+<body class="flex flex-col m-0 h-screen overflow-y-auto">
+
+<nav class="" id="nav-bar">
+  <div class="px-5 md:px-0 py-5 md:py-10 flex-col items-center flex-column md:justify-center">
+    <button class="md:hidden border-4  border-gray-500 rounded " id="menu-button">
+      <img src="img/hamburger.svg" class="w-10" alt="">
+    </button>
+    <ul id="menu" class="max-h-0 overflow-hidden md:max-h-full md:overflow-visible md:flex flex-col md:flex-row md:space-x-8 justify-center space-y-4 md:space-y-0 font-bold transition-all duration-300">
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="about.html" >About</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="main-header flex flex-1 justify-center items-center md:ml-0 md:mt-0  md:mb-0">
+    <main class="px-5">
+      <div class="main-content w-full max-w-6xl flex flex-col md:flex-row">
+        <div class="w-full md:w-1/2 flex justify-center">
+          <img src="img/ben.jpg" alt=""
+               class="rounded-full mt-5 w-40 md:w-80 md:h-80 max-w-80 object-cover" />
+        </div>
+
+        <div class="w-full md:w-1/2">
+          <h3 class="border-b-4 border-white pb-2 text-3xl font-semibold mb-4">Ben kimim,</h3>
+          <p class="text-base leading-relaxed">
+            Aslen Orduluyum ama Ankara’da doğup büyüdüm. Bilgisayara olan ilgim küçük yaşlarda başladı. Ailemden öğrendiğime göre, henüz 2 yaşındayken GTA Vice City ile tanışmışım. Tabii ki bunu hatırlamıyorum.
+            İlkokula giderken YouTube’dan “Nasıl format atılır?” videoları izleyip, izlediklerimi deftere not alarak format atmayı öğrendim. Bu, benim için çok kıymetli bir andı.
+            Yaşım ilerledikçe yazılıma olan ilgim arttı. Ancak yaklaşık 13 yıl boyunca kendi bilgisayarıma sahip olamadığım için bu ilgimi yalnızca internet kafelerde oyun oynayarak sürdürebildim ya da sürdüremedim.
+            Üniversite sınavında yaşadığım talihsizlik nedeniyle bir süre hayata bakış açım değişti. Fakat zamanla yeniden hayat neşemi kazandım ve o günden beri kendim için elimden gelenin en iyisini yapmaya çalışıyorum.
+          </p>
+        </div>
+      </div>
+    </main>
+
+
+
+  </div>
+
+
+<div class="static bottom-0 left-0 clock-container text-center w-40">
+  <div id="clock" class="bg-black text-white p-1 text-lg font-bold"></div>
+</div>
+
+
+<script src="js/index.js"></script>
+</body>
+</html>
