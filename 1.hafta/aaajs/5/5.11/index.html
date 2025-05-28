@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  // let kullanici = {
+  //   ad: 'eren',
+  //   yas: 23
+  // };
+  // let kullanici2 = JSON.parse(JSON.stringify(kullanici));
+
+  let oda = {
+    sayi: 23
+  };
+
+  let tanisma = {
+    baslik: "Konferans",
+    dolduruldu: [{adi: "Ahmet"}, {adi: "Mehmet"}],
+    yer: oda
+  };
+
+  oda.dolduruldu = tanisma;
+  tanisma.self = tanisma;
+
+  alert( JSON.stringify(tanisma, function degistirici(anahtar, deger) {
+    return (anahtar != "" && deger == tanisma) ? undefined : deger;
+  }));
+
+  // ????????????????
+
+</script>
+</body>
+</html>

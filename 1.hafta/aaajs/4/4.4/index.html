@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    'use strict';
+    // let hesapMakinesi = {
+    //     sum(){
+    //         return this.a + this.b;
+    //     },
+    //     mul(){
+    //         return this.a * this.b;
+    //     },
+    //     read(){
+    //         this.a = +prompt('a',0);
+    //         this.b = +prompt('b',0);
+    //     },
+    // };
+    // hesapMakinesi.read();
+    // alert(hesapMakinesi.sum());
+    // alert(hesapMakinesi.mul());
+
+    let merdiven = {
+        adim: 0,
+        yukari(){
+            this.adim++;
+            return this
+        },
+        asagi(){
+            this.adim--;
+            return this
+        },
+        adimGoster: function (){
+            alert(this.adim);
+            return this
+        }
+    };
+    merdiven
+        .yukari()
+        .yukari()
+        .asagi()
+        .yukari()
+        .asagi()
+        .yukari()
+        .adimGoster()
+
+</script>
+</body>
+</html>

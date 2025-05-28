@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    list-style: none;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html,body{
+    height: 100vh;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Verdana", sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.nav {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    text-shadow:
+            0 0 1px #fff,
+            0 0 2px #fff;
+    transition: all 0.5s ease-in-out;
+}
+.nav ul li a:hover {
+    color: #fff;
+    font-size: 22px;
+    text-shadow:
+            0 0 05px #fff,
+            0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 30px #fff,
+            0 0 40px #fff,
+            0 0 50px #fff,
+            0 0 60px #fff,
+            0 0 70px #fff;
+}
+
+
+body .img {
+    background-image: url(../img/index.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(0.5);
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact {
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.contact-title {
+    font-size: 16px;
+    margin-bottom: 2px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-bar {
+    font-size: 16px;
+    color: #ccc;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding-top: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding-top 0.5s ease-in-out;
+}
+
+#social-contact .contact-bar ul{
+    display: flex;
+    flex-direction: column;
+}
+
+#social-contact .contact-bar ul .instagram {
+    margin-left: 25px;
+}
+
+#social-contact .contact-bar ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.contact-bar ul {
+    display: flex;
+}
+
+.contact-bar ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    padding: 0 10px;
+}
+
+.contact-bar ul li a {
+    margin-left: 10px;
+}
+
+.contact.open .contact-bar {
+    max-height: 300px;
+    opacity: 1;
+    padding-top: 10px;
+}
+
+
+.contact-bar img {
+    width: 20px;
+}
+
+
+.clock {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+}

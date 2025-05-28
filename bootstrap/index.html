@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body class="bg-dark-subtle">
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav flex-column mt-1 mt-md-0 my-4 my-md-0 flex-md-row align-items-md-center justify-content-md-center text-md-center mx-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="container-fluid py-5">
+            <div class="row justify-content-center align-items-start">
+                <main class="col-12 col-md-10 col-lg-8">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="myText mb-4">
+                                <h1 class="lh-1 fs-md-1">
+                                    <span class="d-block">Merhaba</span>
+                                    <span class="d-block">Ben,</span>
+                                    <span class="d-block">Eren</span>
+                                </h1>
+                                <p class="fs-6">Kendimi her gün bir adım ileriye atmaya çalışan acemi bir yazılımcıyım</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <div class="works">
+                                <h1 class="mb-3">Şimdiye kadar olan çalışmalarım;</h1>
+                                <div class="accordion accordion-flush col-12 col-md-10 col-lg-8" id="accordionFlushExample">
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                Project-Zero
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">İlk defa tailwind kullanarak yaptığım projem, önce videosunu izleyip ardından kendim yaptım</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                Kaya Harita
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">HTML ve CSS öğrenirken yaptığım proje, bu projede flex ve bir kaç özellik öğrendim</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                Dungeon
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Java öğrenmeye çalıştığım zaman yaptığım basit bir zindan oyunu. Abstract ve Interfaces kullanmaya çalıştım fakat çoğunlukla interface kullandım</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                                JavaScriptEgitim
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Bu proje olmamakla birlikte benim JavaScript öğrenme sürecim. Senseim U. Bey'in yönlendirmesiyle daha güzel yerlere geleceğim</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <div class="container clock-container mt-3 text-center m-auto">
+            <div id="clock" class="bg-dark text-white p-1 fs-4 fw-bold"></div>
+        </div>
+
+        <script src="./js/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+

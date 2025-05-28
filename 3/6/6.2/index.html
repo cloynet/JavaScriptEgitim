@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="time-formatted.js"></script>
+<script src="live-timer.js"></script>
+
+<live-timer id="elem"></live-timer>
+
+
+<script>
+  let elem = document.getElementById('elem');
+  elem.addEventListener('tick', event => console.log(event.detail));
+</script>
+</body>
+</html>

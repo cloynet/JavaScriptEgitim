@@ -1,0 +1,41 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #CED4DA;
+  position: relative;
+  min-height: 100vh;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-button img {
+  filter: brightness(0) invert(1);
+}
+
+nav {
+  background: #212529;
+}
+nav button {
+  cursor: pointer;
+}
+nav ul li a {
+  color: lightgray;
+}
+nav ul li a:hover {
+  color: #999;
+}
+
+.clock-container #clock {
+  z-index: -1;
+  border-top-right-radius: 50px;
+  opacity: 0.3;
+}
+
+/*# sourceMappingURL=index.css.map */

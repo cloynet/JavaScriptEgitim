@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // alert(null || 2 || undefined);
+        // alert(alert(1) || 2 || alert(3));
+        // alert(alert(1) && alert(2));
+        // alert(null || 2 && 3 || 4);
+
+        // let yas = prompt("yasinizi girin : ", '');
+        // if (yas >= 14 && yas <= 90) {
+        //     alert('dogru yas araliginda');
+        // } else {
+        //     alert('yanlis yas araliginda');
+        // }
+
+        // let yas = prompt("yas girin : ", "");
+        // if (yas < 14 || yas > 90) {
+        //     alert('yanlis');
+        // } else {
+        //     alert('dogru');
+        // }
+
+        // if (-1 || 0) alert('birinci');
+        // if (-1 && 0) alert('ikinci');
+        // if (null || -1 && 1) alert('ucuncu');
+
+        let userName = prompt("Who's there?", "");
+
+        if (userName == 'Admin') {
+            let pass = prompt('Password?', '');
+            if (pass == 'TheMaster') {
+                alert('Welcome master');
+            } else if (pass == '' || pass == null) {
+                alert('canceled');
+            } else {
+                alert('Wrong password');
+            }
+        } else if (userName == '' || userName == null) {
+            alert('canceled')
+        } else {
+            alert('ı dont know you');
+        }
+
+    </script>
+</body>
+
+</html>

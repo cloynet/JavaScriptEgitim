@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+//     let regexp = new RegExp("<!--.*?-->", "gs");
+//     let str = `... <!-- My -- comment
+//  test --> ..  <!----> ..
+// `;
+//     alert( str.match(regexp) );
+
+let regexp = /<[^<>]+>/g;
+let str = '<> <a href="/"> <input type="radio" checked> <b>';
+alert( str.match(regexp) );
+
+
+</script>
+</body>
+</html>

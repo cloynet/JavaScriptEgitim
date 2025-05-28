@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+  // function f(){
+  //   alert( this );
+  // }
+  // let user = {
+  //   g: f.bind(null)
+  // };
+  // user.g();
+
+  // function f() {
+  //   alert( this.name );
+  // }
+  // oluşturulduğu zamanki kaynağı hatırlar, fonksiyon birden kez bağlanamaz
+  // f = f.bind({name: "Eren"}).bind({name: "Mehmet"});
+  //
+
+  function askPassword(ok, fail) {
+    let password = prompt("Password?", '');
+    if (password == "rockstar") ok();
+    else fail();
+  }
+
+  let user = {
+    name: 'John',
+
+    loginOk() {
+      alert(`${this.name} logged in`);
+    },
+
+    loginFail() {
+      alert(`${this.name} failed to log in`);
+    },
+
+  };
+
+  askPassword(user.loginOk.bind(user), user.loginFail.bind(user));
+
+</script>
+</body>
+</html>

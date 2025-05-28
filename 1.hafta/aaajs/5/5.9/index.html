@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+  // let kullanici = {
+  //   adi: 'Eren',
+  //   yasi: 23
+  // }
+  //
+  // let {adi:ismi, yasi:yili, adminMi = false} = kullanici;
+  //
+  // alert(ismi);
+  // alert(yili);
+  // alert(adminMi);
+
+  function azamiMaas(maaslar){
+    let max = 0;
+    let maxName = null;
+
+    for (let [isim,maas] of Object.entries(maaslar)){
+      if (max < maas){
+        max = maas;
+        maxName = isim;
+      }
+    }
+    return maxName;
+  }
+
+  let maaslar = {
+    'eren': 100,
+    'yigit': 200,
+    'mehmet': 300
+  };
+  alert(azamiMaas(maaslar));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        // let kullanici = {};
+        // kullanici.isim = "Eren";
+        // kullanici.soyisim = "Esenli";
+        // kullanici.isim = "Yiğit";
+        // delete kullanici.isim;
+        // console.log(kullanici);
+
+        // function bosMu(obj){
+        //     for(let key in obj){
+        //         return false;
+        //     }
+        //     return true;
+        // }
+
+        // const kullanici = {
+        //     isim : "Eren",
+        // }
+        // kullanici.isim = "Erenn";
+        // alert(kullanici.isim);
+
+        let menu = {
+            en: 200,
+            boy: 300,
+            baslik: 'Menü',
+        }
+        ikiIlecarp(menu);
+
+        function  ikiIlecarp(obj){
+            for(let key in obj){
+                if(typeof obj[key] === 'number'){
+                    obj[key] *= 2;
+                }
+            }
+        }
+        console.log(menu);
+
+    </script>
+</body>
+</html>

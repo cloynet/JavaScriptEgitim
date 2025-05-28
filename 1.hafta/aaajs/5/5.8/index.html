@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  // function sumSalaries(salaries){
+  //   let sum = 0;
+  //   for (let salary of Object.values(salaries)){
+  //     sum += salary;
+  //   }
+  //   return sum;
+  // }
+  //
+  // let salaries = {
+  //   'eren' : 100,
+  //   'yigit' : 200,
+  //   'mehmet' : 300
+  // };
+  //
+  // alert(sumSalaries(salaries));
+
+  let kullanici = {
+    adi: 'eren',
+    yasi: 23,
+    yas: 23
+  }
+
+  function ozellikSayisi(obj){
+    return Object.keys(obj).length;
+  }
+
+  alert( ozellikSayisi(kullanici));
+
+</script>
+</body>
+</html>

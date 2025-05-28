@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  /*
+   public genel tanımdır herkes erişebilir.
+   */
+
+
+
+  /*
+   protected genelde _ ile başlar : this._waterAmount;
+   kendi sınıfı ve alt sınıflar tarafından erişilebilir.
+  class CoffeeMachine {
+  _waterAmount = 0;
+
+  set waterAmount(value) {
+    if (value < 0) throw new Error("Su miktarı negatif olamaz");
+    this._waterAmount = value;
+  }
+
+  get waterAmount() {
+    return this._waterAmount;
+  }
+}
+
+protected (_) alanlar miras alınabilir, alt sınıflarda kullanılabilir.
+ */
+
+  /*
+  private # ile başlar #waterLimit
+  sadece sınıfn içinden erişilebilir
+  alt sınıflar da erişemez
+  class CoffeeMachine {
+  #waterLimit = 200;
+
+  #checkWater(value) {
+    if (value < 0) throw new Error("Negatif su");
+    if (value > this.#waterLimit) throw new Error("Çok fazla su");
+  }
+
+  set waterAmount(value) {
+    this.#checkWater(value);
+    this._waterAmount = value;
+  }
+}
+private miras alınamaz
+   */
+
+
+
+</script>
+</body>
+</html>
